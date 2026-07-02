@@ -1,0 +1,139 @@
+/* ================================================================================  */
+
+/* * {
+  color: red;
+}
+
+h4 {
+  color: whitesmoke;
+  background-color: #3a3a3a;
+}
+
+#byId {
+  color: black;
+}
+
+.byClass {
+  color: green;
+  background-color: salmon;
+} */
+
+/* ================================================================================  */
+
+/* diffrent colors method : name, hashcode, rgba, hsl  */
+
+/* ================================================================================  */
+
+/* height, width  */
+
+/* ================================================================================  */
+
+/* inline CSS > internal CSS > external CSS */
+
+/* ================================================================================  */
+
+/* #myDiv > .myClass > divTagName */
+
+/* ================================================================================  */
+
+/* 
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.5);
+} */
+
+/* ================================================================================  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #8ed4e3, #8ca4e8);
+  padding: 40px;
+}
+
+
+.container {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card > img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.tech {
+  background: #49a6ff;
+}
+
+.food {
+  background: #f7b733;
+}
+
+.auto {
+  background: #ff4d4d;
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 15px;
+}
+
+.author small {
+  color: #888;
+}

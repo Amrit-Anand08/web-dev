@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#card {
+  width: 40%;
+  height: 40%;
+  background-color: #2a2a2a;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: 0.6s;
+}
+#card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e3a8a 30%,
+    #3b82f6 60%,
+    #6366f1 100%
+  );
+}
+#card:hover  #cardImg {
+  scale: 1.1;
+  transition: 0.6s all ease;
+}
+
+#card #left {
+  width: 40%;
+  height: 85%;
+  /* background-color: salmon; */
+  border: 0.5px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#card #left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 0.5px solid white;
+  border-radius: 10px;
+}
+#card #right {
+  width: 50%;
+  height: 90%;
+  /* background-color: salmon; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+#card #right #header {
+  width: 100%;
+  height: 30%;
+  /* background-color: whitesmoke; */
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+#card #right #content {
+  width: 100%;
+  height: 70%;
+  /* background-color: whitesmoke; */
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#card #right #footer {
+  width: 100%;
+  height: 20%;
+  /* background-color: whitesmoke; */
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+#test {
+  width: 300px;
+  height: 300px;
+  margin-left: 30px;
+  border: 3px dashed black;
+} */

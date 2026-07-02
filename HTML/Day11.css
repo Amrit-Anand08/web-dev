@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3a3a;
+}
+
+#parent {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: royalblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#child {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: salmon;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#parent:hover {
+  border-radius: 50%;
+  transition: 1s all ease;
+}
+
+#parent:hover #child {
+  border-radius: 50%;
+  transition: 1s all ease;
+}

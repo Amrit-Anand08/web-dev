@@ -1,0 +1,36 @@
+/* #parentDiv {
+  width: 50vw;
+  height: 50vh;
+  border: 2px solid black;
+  background-color: royalblue;
+}
+
+#childDiv {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+  background-color: salmon;
+}
+
+#grandChildDiv {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+  background-color: hotpink;
+} */
+
+#box1 {
+  width: 2rem;
+  height: 2rem;
+  background-color: salmon;
+}
+
+.parent {
+  font-size: 50px;
+}
+
+#box2 {
+  width: 2em;
+  height: 2em;
+  background-color: salmon;
+}
