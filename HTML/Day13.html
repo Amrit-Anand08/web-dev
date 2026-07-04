@@ -3,95 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amazon Clone</title>
-
+    <title>NASA Clone</title>
     <link rel="stylesheet" href="Day13.css" />
-
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
+
   <body>
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar">
-        <div class="logo border">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-            alt=""
-          />
-        </div>
-
-        <div class="location border">
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <p>Delivering to Noida 110091</p>
-            <h4>Update location</h4>
+    <section class="main">
+      <div class="overlay">
+        <!-- Navbar  -->
+        <header>
+          <div class="left-nav">
+            <h2>Explore <i class="fa-solid fa-angle-down"></i></h2>
+            <input
+              type="text"
+              style="
+                background-color: transparent;
+                padding: 5px 10px;
+                color: white;
+              "
+              placeholder="Search"
+            />
           </div>
+          <div class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg"
+              alt="test"
+            />
+            <!-- <img src="../icons/amazon-logo.png" alt="" /> -->
+          </div>
+          <div class="right-nav">
+            <a href="#">News & Events <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">Multimedia <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#"
+              >NASA+
+              <div id="live" style="border: 2px solid red; padding: 2px 8px">
+                <a href="#">LIVE</a>
+              </div></a
+            >
+          </div>
+        </header>
+        <!-- Content  -->
+        <div class="hero-content">
+          <h1>
+            Humanity's First<br />
+            Outpost on the Moon
+          </h1>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi qui
+            reiciendis, error illo nisi libero aut velit odio nobis. Iusto
+            cumque libero laborum perspiciatis inventore sunt debitis iure dicta
+            dolore sint consequuntur.
+          </p>
+
+          <button>Mission Base Science</button>
         </div>
 
-        <div class="search">
-          <select>
-            <option>All</option>
-          </select>
+        <!-- hr line  -->
+        <div style="width: 100%; height: 1px; border: 1px solid gray"></div>
 
-          <input type="text" placeholder="Search Amazon.in" />
-
-          <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-
-        <div class="language border">🇮🇳 EN</div>
-
-        <div class="signin border">
-          <p>Hello, sign in</p>
-          <h4>Account & Lists</h4>
-        </div>
-
-        <div class="orders border">
-          <p>Returns</p>
-          <h4>& Orders</h4>
-        </div>
-
-        <div class="cart border">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Cart
-        </div>
-      </nav>
-
-      <!-- Secondary Navbar -->
-
-      <div class="panel">
-        <div class="panel-item">
-          <i class="fa-solid fa-bars"></i>
-          All
-        </div>
-
-        <div class="panel-item">Fresh</div>
-        <div class="panel-item">MX Player</div>
-        <div class="panel-item">Sell</div>
-        <div class="panel-item">Bestsellers</div>
-        <div class="panel-item">Today's Deals</div>
-        <div class="panel-item">Prime</div>
-        <div class="panel-item">Mobiles</div>
-        <div class="panel-item">New Releases</div>
-        <div class="panel-item">Customer Service</div>
+        <!-- Bottom  -->
+        <section class="bottom">
+          <div class="left-bottom">
+            <div class="card">
+              <p
+                style="
+                  letter-spacing: 5px;
+                  font-size: 16px;
+                  color: rgb(130, 130, 130);
+                "
+              >
+                SUSTAINED LUNAR PRESENCE
+              </p>
+              <h3 style="font-size: 20px; margin-top: 20px">
+                Moon Base
+                <i
+                  class="fa-solid fa-circle-arrow-right"
+                  style="color: tomato"
+                ></i>
+              </h3>
+            </div>
+            <div class="card">
+              <p
+                style="
+                  letter-spacing: 5px;
+                  font-size: 16px;
+                  color: rgb(130, 130, 130);
+                "
+              >
+                DELIVERING SCIENCE
+              </p>
+              <h3 style="font-size: 20px; margin-top: 20px">
+                Commercial Lunar Services
+                <i
+                  class="fa-solid fa-circle-arrow-right"
+                  style="color: tomato"
+                ></i>
+              </h3>
+            </div>
+            <div class="card">
+              <p
+                style="
+                  letter-spacing: 5px;
+                  font-size: 16px;
+                  color: rgb(130, 130, 130);
+                "
+              >
+                MOON TO MARS
+              </p>
+              <h3 style="font-size: 20px; margin-top: 20px">
+                Artemis
+                <i
+                  class="fa-solid fa-circle-arrow-right"
+                  style="color: tomato"
+                ></i>
+              </h3>
+            </div>
+          </div>
+          <div class="right-bottom">
+            <div
+              id="circle"
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid white;
+                overflow: hidden;
+                object-fit: cover;
+                object-position: center;
+              "
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg"
+                alt="img"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+            <div
+              id="circle"
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid gray;
+              "
+            >
+              <i class="fa-solid fa-pause" style="color: white"></i>
+            </div>
+          </div>
+        </section>
       </div>
-    </header>
-
-    <!-- Hero -->
-
-    <section class="hero">
-      <button class="arrow left">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-
-      <button class="arrow right">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
     </section>
   </body>
 </html>

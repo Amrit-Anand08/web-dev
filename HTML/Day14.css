@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  padding: 50px;
+  min-height: 100vh;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.div {
+  width: 300px;
+  height: 400px;
+  background-color: #3a3a3a;
+  border: 1px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-color: royalblue;
+    flex-direction: column;
+    /* transition: 0.2s; */
+  }
+}
