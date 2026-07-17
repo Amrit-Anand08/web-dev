@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: salmon;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#column {
+  flex: 24%;
+  max-width: 24%;
+}
+
+#column img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 8px black;
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  #column {
+    flex: 31%;
+    max-width: 31%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #column {
+    flex: 47%;
+    max-width: 47%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #column {
+    flex: 96%;
+    max-width: 96%;
+  }
+}

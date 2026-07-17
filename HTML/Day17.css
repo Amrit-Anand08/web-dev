@@ -1,0 +1,54 @@
+/* =========== WITH FLEXBOX =========== */
+
+/* .container {
+  width: 600px;
+  height: 600px;
+  border: 5px solid brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 12%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  border: 1px solid red;
+  background-color: black;
+  width: 96%;
+  height: 12%;
+}
+
+.white {
+  border: 1px solid red;
+  background-color: white;
+  width: 96%;
+  height: 12%;
+} */
+
+/* =========== WITH GRID =========== */
+
+.board {
+  width: 480px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 5px solid brown;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
